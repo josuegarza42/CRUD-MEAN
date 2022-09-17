@@ -1,7 +1,12 @@
-const router=require('express').Router();
+const router = require('express').Router();
+const mongojs = require('mongojs');
+const db = mongojs('mean-db', ['tasks']);
 
 router.get('/tasks', (req, res, next) => {
-    res.send('API GET /');
+    db.tasks.find((err, tasks) => {
+        if(err) return next(err);
+        res.json(tasks);
+    });
 });
 
 module.exports = router;
