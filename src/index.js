@@ -13,14 +13,14 @@ app.set('views', path.join(__dirname, 'views'));	//render views
 //middleware
 app.use(cors()); //accepts cors headers
 app.use(express.json()); //accept json
-app.use(express.urlencoded({extended:false})); //
+app.use(express.urlencoded({ extended: false })); //
 
 //routes
 app.use(indexRoutes);
-app.use('/api',taskRoutes);
+app.use('/api', taskRoutes);
 
 
 app.listen(app.get('port'), () => {
-  console.log('Server is running on port 3000', app.get('port'));
+    console.log('Server is running on port 3000', app.get('port'));
 });
 
