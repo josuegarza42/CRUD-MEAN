@@ -1,7 +1,7 @@
 const cors = require('cors');
 const express = require('express');
 const app = express();
-const indexRoutes = require('./routes/index');
+// const indexRoutes = require('./routes/index');
 const taskRoutes = require('./routes/tasks');
 const path = require('path');
 //setup express
@@ -16,8 +16,12 @@ app.use(express.json()); //accept json
 app.use(express.urlencoded({ extended: false })); //
 
 //routes
-app.use(indexRoutes);
+// app.use(indexRoutes);
 app.use('/api', taskRoutes);
+
+//static files
+
+app.use(express.static(path.join(__dirname, 'dist')));
 
 
 app.listen(app.get('port'), () => {
