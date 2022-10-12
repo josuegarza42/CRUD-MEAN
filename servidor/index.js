@@ -7,6 +7,8 @@ const app = express();
 //conectar a la base de datos
 conectarDB();
 
+app.use(express.json({ extended: true }));
+
 app.use('/api/productos', require('./routes/producto'));
 
 //rutas
