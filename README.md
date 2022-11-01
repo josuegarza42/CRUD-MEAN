@@ -1,7 +1,7 @@
 # CRUD-MEAN
-This is a functional crud made with MEAN
+This is a functional CRUD made with MEAN
 
-Necesitaras:
-Instalar el cli de angular y actualizar paquetes
-ng serve para la parte de cliente
-npm run dev para la parte de servidor
+Necesitaras: <br>
+Instalar el cli de angular y actualizar paquetes <br>
+ng serve para la parte de cliente<br>
+npm run dev para la parte de servidor<br>
