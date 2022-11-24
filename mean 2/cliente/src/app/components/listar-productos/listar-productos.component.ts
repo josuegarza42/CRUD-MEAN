@@ -27,7 +27,7 @@ listProductos: Producto [] = [];
   }
   eliminarProducto(id: any){
     this._productoService.eliminarProducto(id).subscribe(data => {
-      this.toastr.error('El producto fue eliminado con exito', 'Producto Eliinado');
+      this.toastr.error('El producto fue eliminado con exito', 'Producto Eliminado');
       this.obtenerProductos();
     }, error => {
       console.log(error);

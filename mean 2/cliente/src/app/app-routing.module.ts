@@ -4,8 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 // componentes
 import { ListarProductosComponent } from './components/listar-productos/listar-productos.component';
 import { CrearProductoComponent } from './components/crear-producto/crear-producto.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
+  {
+    path: 'home', component: HomeComponent
+  },
   {
     path: '', component: ListarProductosComponent
   },
