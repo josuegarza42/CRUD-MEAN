@@ -1,13 +1,21 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/home">
+      <i class="bi bi-database"></i>      Mi sistema
+    </a>
+  </div>
+</nav>
+
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8 offset-lg-2">
 
-            <div class="card">
-                <div class="card-body text-center">
+            <div class="card text-bg-dark ">
+                <div class="card-body  text-center">
                     <span class="titulo">
                         Listado de productos
                     </span>
-                    <button class="btn btn-success float-end" routerLink="/crear-producto">Nuevo producto</button>
+                    <button class="btn btn-success float-end" routerLink="/crear-producto"><i class="bi bi-plus-circle mx-3"></i>Agregar producto</button>
 
                     <table *ngIf="listProductos.length > 0" class="table table-striped-columns mt-3">
                         <thead>
@@ -34,9 +42,11 @@
 
                         </tbody>
                     </table>
-                    <h5 *ngIf="listProductos.length == 0">
-                        No hay productos
-                    </h5>
+                    <div class="row my-4 justify-content-center" *ngIf="listProductos.length == 0">
+                        <div class="col-12">
+                          <p class="h4">No se han registrado productos aun ...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
