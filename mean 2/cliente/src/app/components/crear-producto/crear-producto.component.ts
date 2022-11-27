@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormsBuilder, Validators } from '@angular/forms';
 import { Producto } from 'src/app/models/producto';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { ProductoService } from 'src/app/services/producto.service';
 
 @Component({
+
   selector: 'app-crear-producto',
   templateUrl: './crear-producto.component.html',
   styleUrls: ['./crear-producto.component.css']
