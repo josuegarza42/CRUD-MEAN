@@ -12,8 +12,23 @@ Desarrollado por:
 * Ulises Uriel Domínguez Pérez (298428)
 ```
 
-Necesitaras: <br>
+### Necesitaras: <br>
 
-Instalar el cli de angular y actualizar paquetes <br>
-ng serve para la parte de cliente<br>
-npm run dev para la parte de servidor<br>
+* Instalar el cli de angular
+* Instalar paquetes
+
+> Modificar proyecto o instalar paqueterias 
+```console
+npm install 
+```
+
+
+> Cliente
+```console
+ng serve 
+```
+
+>Servidor
+```console
+npm run dev 
+```
